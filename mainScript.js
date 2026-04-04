@@ -15,4 +15,12 @@ function createGrid(num = 16) {
   }
 }
 
+function newGrid() {
+  document.querySelector(".square-container").innerHTML = "";
+  let chosenNum = prompt("what size would you like your grid to be?");
+  createGrid(chosenNum);
+}
+
 createGrid();
+let newGridBtn = document.querySelector("#new-grid-btn");
+newGridBtn.addEventListener("click", newGrid);
