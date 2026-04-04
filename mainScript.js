@@ -6,6 +6,9 @@ function createGrid(num = 16) {
     for (let j = 0; j < num; j++) {
       let newSquare = document.createElement("div");
       newSquare.classList.add("square");
+      newSquare.addEventListener("mouseover", () => {
+        newSquare.classList.add("hover");
+      });
       newRow.appendChild(newSquare);
     }
     squareContainer.appendChild(newRow);
