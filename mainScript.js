@@ -1,5 +1,6 @@
 function createGrid(num = 16) {
   let squareContainer = document.querySelector(".square-container");
+  if (num > 100) return;
   for (let i = 0; i < num; i++) {
     let newRow = document.createElement("div");
     newRow.classList.add("row");
